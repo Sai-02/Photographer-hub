@@ -1,0 +1,5 @@
+.background-video-container{
+    background: url('background.mp4')  no-repeat;
+    width:100vw;
+    height:100vh;
+}
