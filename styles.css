@@ -49,6 +49,7 @@ Variables
   margin: 0;
   padding: 0;
 }
+
 .logo {
   width: 35vw;
   padding-left: 2rem;
@@ -70,18 +71,20 @@ Variables
   margin-top: 100px;
   padding: 50px 20px;
 }
-.login {
+.login-child-container {
   display: flex;
   justify-content: space-around;
-  align-items: space-around;
-  /*flex-direction:column;*/
+  flex-wrap: nowrap;
+
   /*flex-wrap:wrap;*/
 }
 .login-child {
   background: paleturquoise;
-  display: inline-block;
+  /*display: inline-block;*/
   padding-right: 23px;
   box-shadow: var(--dark-shadow);
+  text-align: center;
+  transition: var(--transition);
 }
 .login-child h3 {
   font-size: 3rem;
@@ -91,7 +94,7 @@ Variables
 .login-child p {
   max-width: 450px;
   font-size: 2rem;
-  margin: 0 auto;
+
   color: white;
   letter-spacing: var(--spacing);
 }
@@ -100,4 +103,47 @@ Variables
 }
 .login-button-container {
   text-align: center;
+  padding-top: 23px;
+  padding-bottom: 13px;
+}
+.login-child-container :hover {
+  transform: scale(1.02);
+}
+.login-child-container :hover p {
+  transform: scale(1);
+}
+
+.login-child-container :hover h3 {
+  transform: scale(1);
+}
+
+.login-child-container :hover button {
+  transform: scale(1);
+}
+.login-child-container :hover.login-button-container {
+  transform: scale(1);
+}
+.login-button {
+  border: none;
+  font-size: 2rem;
+  color: var(--clr-primary-1);
+  background: var(--clr-grey-9);
+}
+.login-button-container :hover {
+  border-bottom: 2px solid var(--clr-grey-4);
+  background: var(--clr-white);
+  color: rgba(23, 231, 23, 0.7);
+}
+@media screen and (max-width: 1028px) {
+  .logo {
+    width: 60vw;
+  }
+  .navbar {
+    width: 100vw;
+  }
+  .logo-child-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
 }
