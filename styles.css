@@ -63,6 +63,7 @@ Variables
   color: white;
   background: var(--clr-primary-5);
   position: fixed;
+  z-index: 1;
 
   line-height: 4rem;
   width: 100vw;
@@ -72,19 +73,18 @@ Variables
   padding: 50px 20px;
 }
 .login-child-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: nowrap;
+  text-align: center;
 
   /*flex-wrap:wrap;*/
 }
 .login-child {
   background: paleturquoise;
-  /*display: inline-block;*/
+  display: block;
   padding-right: 23px;
   box-shadow: var(--dark-shadow);
   text-align: center;
   transition: var(--transition);
+  margin-bottom: 30px;
 }
 .login-child h3 {
   font-size: 3rem;
@@ -97,6 +97,8 @@ Variables
 
   color: white;
   letter-spacing: var(--spacing);
+  text-align: center;
+  margin: 0 auto;
 }
 .login-button {
   font-size: 1.5rem;
@@ -134,16 +136,33 @@ Variables
   background: var(--clr-white);
   color: rgba(23, 231, 23, 0.7);
 }
-@media screen and (max-width: 1028px) {
+@media screen and (min-width: 1028px) {
   .logo {
-    width: 60vw;
+  }
+  .logo-container {
+    width: 100vw;
+
+    /*            */
   }
   .navbar {
     width: 100vw;
   }
-  .logo-child-container {
+  .login-child-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    flex-wrap: nowrap;
   }
+}
+.gallery {
+  padding: 34px;
+}
+.flex-container-for-image-container {
+}
+.gallery-image {
+  height: 17em;
+  border-radius: 8px;
+  display: inline;
+}
+.gallery-img-container {
+  display: inline;
 }
