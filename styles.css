@@ -155,8 +155,22 @@ Variables
 }
 .gallery {
   padding: 34px;
+  margin-top: 110px;
+}
+.gallery h2 {
+  text-align: center;
+  margin-bottom: 24px;
+
+  font-size: 3em;
+}
+.gallery span {
+  color: var(--clr-primary-5);
 }
 .flex-container-for-image-container {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .gallery-image {
   height: 17em;
@@ -165,4 +179,19 @@ Variables
 }
 .gallery-img-container {
   display: inline;
+}
+
+.gallery-image:hover {
+  opacity: 0.8;
+}
+
+.about-heading h1 {
+  text-align: center;
+  font-size: 3em;
+}
+.about-heading span {
+  color: var(--clr-primary-5);
+}
+.about-img {
+  width: 500px;
 }
