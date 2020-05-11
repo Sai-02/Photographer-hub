@@ -54,22 +54,31 @@ Variables
   width: 35vw;
   padding-left: 2rem;
 }
-.logo-container {
+/* .logo-container {
   padding-top: 100px;
 
-  /*            */
+} 
+*/
+/* .logo-container{
+  margin-bottom: 30px;
+} */
+.space-filler {
+  min-height: 200px;
 }
 .navbar {
   color: white;
-  background: var(--clr-primary-5);
+  background: white;
   position: fixed;
   z-index: 1;
+  border-bottom: var(--clr-grey-2);
 
   line-height: 4rem;
   width: 100vw;
+  margin-bottom: 40px;
+  box-shadow: var(--dark-shadow);
 }
 .login-container {
-  margin-top: 100px;
+  /* margin-top: 10px;  */
   padding: 50px 20px;
 }
 .login-child-container {
