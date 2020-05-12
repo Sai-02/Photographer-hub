@@ -53,6 +53,7 @@ Variables
 .logo {
   width: 35vw;
   padding-left: 2rem;
+  margin-top: 20px;
 }
 /* .logo-container {
   padding-top: 100px;
@@ -85,6 +86,17 @@ Variables
   text-align: center;
 
   /*flex-wrap:wrap;*/
+}
+@media screen and (max-width: 992px) {
+  .login-child p {
+    font-size: 0.5rem;
+  }
+  .navbar {
+    width: 100vw;
+  }
+  .login-child h3 {
+    font-size: 1rem;
+  }
 }
 .login-child {
   background: paleturquoise;
@@ -243,7 +255,7 @@ Variables
     max-width: 600px;
   }
 }
-@media screen and (min-width: 1170px) {
+@media screen and (min-width: 992px) {
   .about-img::before {
     content: "";
     position: absolute;
@@ -254,9 +266,16 @@ Variables
     box-sizing: border-box;
     top: -1.5rem;
     left: -1.5rem;
-    z-index: -1;
+    z-index: -2;
   }
   .about-img {
+    position: relative;
+    z-index: 10;
+  }
+  .about-image-container {
+    position: relative;
+  }
+  .about-image {
     position: relative;
   }
 }
