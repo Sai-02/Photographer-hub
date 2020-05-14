@@ -279,3 +279,46 @@ Variables
     position: relative;
   }
 }
+.footer {
+  background: var(--clr-grey-1);
+}
+.footer-links-container {
+  margin-top: 80px;
+  padding-top: 60px;
+}
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+}
+.footer-links li {
+  list-style: none;
+  margin: auto 23px;
+  font-size: 1.5rem;
+}
+.footer-link {
+  color: white;
+}
+.social-icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+.social-icon {
+  margin: auto 31px;
+  font-size: 2rem;
+  color: white;
+}
+footer p {
+  font-size: 1.5rem;
+  color: var(--clr-grey-5);
+  text-align: center;
+  margin-top: 10px;
+}
+footer {
+  padding-bottom: 20px;
+}
