@@ -111,6 +111,7 @@ Variables
   transition: var(--transition);
   float: right;
   margin-top: 15px;
+  margin-right: 10px;
 }
 .nav-toggle:hover {
   transform: scale(1.2);
