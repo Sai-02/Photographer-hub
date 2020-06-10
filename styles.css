@@ -87,16 +87,49 @@ Variables
 
   /*flex-wrap:wrap;*/
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 400px) {
+  .login-child-container {
+    text-align: center;
+
+    /*flex-wrap:wrap;*/
+  }
   .login-child p {
-    font-size: 0.5rem;
+    font-size: 2px;
+  }
+  .login-child {
+    max-height: 50vh;
+    overflow: hidden;
+    max-width: 300px;
+    text-align: center;
+    /* display: inline-flex; */
+  }
+  article {
+    display: inline;
+    text-align: center;
   }
   .navbar {
     width: 100vw;
   }
   .login-child h3 {
-    font-size: 1rem;
+    font-size: 0.5rem;
   }
+  .login-child p {
+    font-size: 16px;
+    letter-spacing: normal;
+    max-width: 100px;
+    max-height: 10vh;
+    opacity: 0;
+  }
+  .login-child-container {
+    /* margin: 0 auto; */
+    text-align: center;
+  }
+  /* p{
+    font-size: 16px;
+    letter-spacing:1px;
+    max-width: 200px;
+    font-stretch: condensed;
+  } */
 }
 .login-child {
   background: paleturquoise;
@@ -158,8 +191,8 @@ Variables
   color: rgba(23, 231, 23, 0.7);
 }
 @media screen and (min-width: 1028px) {
-  .logo {
-  }
+  /* .logo {
+  } */
   .logo-container {
     width: 100vw;
 
